@@ -22,11 +22,24 @@ export class DesktopIconComponent implements OnInit
 
     }
 
+    public onClick(event: Event): void
+    {
+        const clicked: HTMLElement = (event.target as HTMLElement);
+
+            if(clicked.id === "icon")
+                clicked.parentElement?.parentElement?.classList.add("iconselected", "justclicked");
+            else if(clicked.id === "span" || clicked.id === "para")
+                clicked.parentElement?.classList.add("iconselected", "justclicked");
+            else
+                clicked.classList.add("iconselected", "justclicked");
+
+    }
+
     public getIconSrc(): string
     {
         if(!this.icon || !Object.keys(Icons).filter(key => isNaN(+key)).includes(this.icon))
         {
-            console.log(this.icon + " is not an icon");
+            console.log(this.icon + " is not an icon!");
             return "";
         }
 

@@ -1,9 +1,9 @@
-<div class="desktop-tile">
-    <p class="aligncenter">
-        <img src="{{ getIconSrc() }}"/>
+<div class="desktop-tile" (click)="onClick($event)" id="maincon">
+    <p id="para">
+        <img src="{{ getIconSrc() }}" id="icon"/>
     </p>
 
-    <span>{{ text }}</span>
+    <span id="span">{{ text }}</span>
 </div>
 
 <!--

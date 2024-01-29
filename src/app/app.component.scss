@@ -6,4 +6,26 @@ img
     position: absolute;
     right: 10px;
     bottom: 90px;
+    z-index: 0;
+}
+.main
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 100%;
+}
+.window
+{
+    z-index: 1;
+}
+#desktop-icon
+{
+    width: 175px;
+    z-index: 2;
+}
+.spacer
+{
+    height: 20px
 }

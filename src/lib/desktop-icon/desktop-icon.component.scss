@@ -5,12 +5,27 @@
     width: 120px;
     height: 120px;
     padding: 10px;
+    cursor: pointer;
+    z-index: 1;
 }
 img
 {
     height: 64px;
     width: 64px;
     image-rendering: pixelated;
+}
+.iconselected
+{
+    filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+    border: 2px dotted lightgray;
+    width: 116px;
+    height: 116px;
+}
+.icondeselected
+{
+    border: 2px dotted lightgray;
+    width: 116px;
+    height: 116px;
 }
 p
 {
