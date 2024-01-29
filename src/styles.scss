@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face 
+{
+    font-family: 'MS Serif';
+    src: url('assets/MS Sans Serif 8pt.ttf') format('truetype');
+}
+@font-face 
+{
+    font-family: 'MS Serif';
+    src: url('assets/MS Sans Serif 8pt bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+html, body 
+{ 
+    height: 100%; 
+    background-color: rgb(9, 133, 131);
+}
+body 
+{ 
+    margin: 0; 
+    font-family: 'MS Serif'; 
+}
