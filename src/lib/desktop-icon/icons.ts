@@ -11,5 +11,6 @@ export enum Icons
     note = "note",
     recycle_bin = "recycle_bin",
     shut_down = "shut_down",
-    user_card = "user_card"
+    user_card = "user_card",
+    imprint = "imprint",
 }

@@ -1,6 +1,7 @@
 import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LibMod } from '../lib/lib.module';
+import { Icons } from '../lib/desktop-icon/icons';
 
 @Component
 ({
@@ -15,6 +16,7 @@ import { LibMod } from '../lib/lib.module';
 export class AppComponent 
 {
   title = 'Website_v2';
+  Icons = Icons;
 
   public async onMainClick(event: any): Promise<void>
   {

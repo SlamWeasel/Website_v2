@@ -3,6 +3,7 @@ import { WindowComponent } from "./window/window.component";
 import { DesktopIconComponent } from "./desktop-icon/desktop-icon.component";
 import { MatIcon } from '@angular/material/icon'
 import { TaskBarCompnent } from "./task-bar/task-bar.component";
+import { StartComponent } from "./task-bar/start/start.component";
 
 @NgModule
 ({
@@ -10,7 +11,8 @@ import { TaskBarCompnent } from "./task-bar/task-bar.component";
     [
         WindowComponent,
         DesktopIconComponent,
-        TaskBarCompnent
+        TaskBarCompnent,
+        StartComponent
     ],
     imports: 
     [
@@ -20,7 +22,8 @@ import { TaskBarCompnent } from "./task-bar/task-bar.component";
     [
         WindowComponent,
         DesktopIconComponent,
-        TaskBarCompnent
+        TaskBarCompnent,
+        StartComponent
     ],
 })
 export class LibMod 

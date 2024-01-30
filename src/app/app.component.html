@@ -1,20 +1,22 @@
-<div class="spacer"></div>
+<div class="spacer" (click)="onMainClick($event)"></div>
 <main class="main" (click)="onMainClick($event)">
-  <desktop-icon id="desktop-icon" [icon]="'recycle_bin'" [text]="'Recycle Bin'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'folder_empty'" [text]="'Thoughts'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'folder_filled'" [text]="'ideas'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'folder_filled'" [text]="'stuff'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'folder_filled'" [text]="'music'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'folder_filled'" [text]="'Cat Images'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'computer'" [text]="'My Machine'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'cmd'" [text]="'cmd.exe'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'internet'" [text]="'ie_x86.exe'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'msn'" [text]="'msn_x86.exe'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'user_card'" [text]="'personal cv&shy;_final_final&shy;_final(2).pdf'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'game_2'" [text]="'minesweeper&shy;_x86.exe'" ondblclick="window.open('https://minesweeper.online/start/2');"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'game_1'" [text]="'solitaire&shy;_x86.exe'" ondblclick="window.open('https://solitaired.com');"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'note'" [text]="'passwords.txt'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="'shut_down'" [text]="'Turn Off'" ondblclick="close();"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.recycle_bin" [text]="'Recycle Bin'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.folder_empty" [text]="'Thoughts'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.folder_filled" [text]="'ideas'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.folder_filled" [text]="'stuff'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.folder_filled" [text]="'music'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.folder_filled" [text]="'Cat Images'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.computer" [text]="'My Machine'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.cmd" [text]="'cmd.exe'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.internet" [text]="'ie_x86.exe'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.msn" [text]="'msn_x86.exe'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.user_card" [text]="'personal cv&shy;_final_final&shy;_final(2).pdf'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.game_2" [text]="'minesweeper&shy;_x86.exe'" ondblclick="window.open('https://minesweeper.online/start/2');"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.game_1" [text]="'solitaire&shy;_x86.exe'" ondblclick="window.open('https://solitaired.com');"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.note" [text]="'passwords.txt'"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.shut_down" [text]="'Turn Off'" ondblclick="close();"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.imprint" [text]="'Imprint'"></desktop-icon>
+  
   <img src="../assets/media/logo.png"/>
   <task-bar></task-bar>
 </main>
