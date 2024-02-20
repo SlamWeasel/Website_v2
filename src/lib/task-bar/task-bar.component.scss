@@ -2,11 +2,18 @@
 {
     background-color: #cab79f;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 0px;
+    bottom: 0px;
     height: 50px;
     width: 100%;
     overflow: hidden;
     border-top: 2px solid #fffbdb;
     outline: 2px solid #e4ceb3;
+}
+
+notif
+{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }

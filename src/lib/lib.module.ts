@@ -4,6 +4,8 @@ import { DesktopIconComponent } from "./desktop-icon/desktop-icon.component";
 import { MatIcon } from '@angular/material/icon'
 import { TaskBarCompnent } from "./task-bar/task-bar.component";
 import { StartComponent } from "./task-bar/start/start.component";
+import { NotificationBarComponent } from "./task-bar/notif-bar/notif.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule
 ({
@@ -12,18 +14,21 @@ import { StartComponent } from "./task-bar/start/start.component";
         WindowComponent,
         DesktopIconComponent,
         TaskBarCompnent,
-        StartComponent
+        StartComponent,
+        NotificationBarComponent
     ],
     imports: 
     [
-        MatIcon
+        MatIcon,
+        CommonModule
     ],
     exports: 
     [
         WindowComponent,
         DesktopIconComponent,
         TaskBarCompnent,
-        StartComponent
+        StartComponent,
+        NotificationBarComponent
     ],
 })
 export class LibMod 

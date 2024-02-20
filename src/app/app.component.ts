@@ -23,8 +23,6 @@ export class AppComponent
     const elems: HTMLCollectionOf<Element> = document.getElementsByTagName("desktop-icon");
     const target: HTMLElement = event.target;
 
-    console.log( ["maincon","para", "icon", "span"].includes(target.id) );
-
     for(let i = 0; i < elems.length; i++)
     {
       const classList: DOMTokenList = (elems[i].lastElementChild?.classList as DOMTokenList);

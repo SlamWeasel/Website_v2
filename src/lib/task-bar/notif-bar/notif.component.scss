@@ -1,0 +1,57 @@
+@import "../../../styles.scss";
+
+.holder
+{
+    padding: 3px;
+}
+.start-background
+{
+    position: relative;
+    height: 44px;
+    width: 110px;
+    z-index: 5;
+}
+.light-line
+{
+    position: absolute;
+    height: 40px;
+    width: 106px;
+    right: 2px;
+    bottom: 2px;
+    z-index: 8;
+    background-color: #efd8bc;
+}
+.dark-line
+{   
+    position: absolute;
+    height: 38px;
+    width: 104px;
+    left: 2px;
+    top: 2px;
+    z-index: 9;
+    background-color: #817566;
+}
+.main-grey
+{
+    position: absolute;
+    height: 36px;
+    width: 102px;
+    left: 4px;
+    top: 4px;
+    z-index: 10;
+    background-color: #cab79f;
+}
+.date
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 11;
+    font: 10px/22px 'MS Serif';
+    font-size: 20px;
+    text-align: right;
+    right: 0px;
+    padding-right: 8px;
+    padding-top: 13px;
+    color: black;
+}
