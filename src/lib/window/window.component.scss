@@ -1,6 +1,42 @@
 @import "../../styles.scss";
-div
+@import "../../assets/border.scss";
+
+:host
+{
+    position: fixed;
+    z-index: 2;
+    top: 30vh;
+    left: 30vh;
+    height: 0px;
+    width: 0px;
+
+}
+#windowBackdrop
 {
     font: 35px/50px 'MS Serif';
     font-size: 40px;
+    top: 30vh;
+    left: 30vh;
+    width: 50vh;
+    height: 30vh;
+    z-index: 11;
+    transform: translate3d(0px, 0px, 0px);
+}
+#windowHandle
+{
+    position: relative;
+    top: 4px;
+    left: 4px;
+    margin-bottom: 8px;
+    height: 25px;
+    width: calc(100% - 8px);
+    background-color: blue;
+    z-index: 12;
+}
+#windowContent
+{
+    position: relative;
+    margin: 4px;
+    background-color: green;
+    z-index: 12;
 }

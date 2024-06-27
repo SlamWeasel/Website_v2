@@ -6,6 +6,7 @@ import { TaskBarCompnent } from "./task-bar/task-bar.component";
 import { StartComponent } from "./task-bar/start/start.component";
 import { NotificationBarComponent } from "./task-bar/notif-bar/notif.component";
 import { CommonModule } from "@angular/common";
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule
 ({
@@ -20,7 +21,8 @@ import { CommonModule } from "@angular/common";
     imports: 
     [
         MatIcon,
-        CommonModule
+        CommonModule,
+        DragDropModule
     ],
     exports: 
     [

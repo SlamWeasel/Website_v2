@@ -13,12 +13,16 @@
   <desktop-icon id="desktop-icon" [icon]="Icons.user_card" [text]="'personal cv&shy;_final_final&shy;_final(2).pdf'"></desktop-icon>
   <desktop-icon id="desktop-icon" [icon]="Icons.game_2" [text]="'minesweeper&shy;_x86.exe'" ondblclick="window.open('https://minesweeper.online/start/2');"></desktop-icon>
   <desktop-icon id="desktop-icon" [icon]="Icons.game_1" [text]="'solitaire&shy;_x86.exe'" ondblclick="window.open('https://solitaired.com');"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="Icons.note" [text]="'passwords.txt'"></desktop-icon>
-  <desktop-icon id="desktop-icon" [icon]="Icons.shut_down" [text]="'Turn Off'" ondblclick="close();"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.note" [text]="'passwords.txt'" (dblclick)="openNodepad(windowOverlay)"></desktop-icon>
+  <desktop-icon id="desktop-icon" [icon]="Icons.shut_down" [text]="'Turn Off'" (dblclick)="close($event)"></desktop-icon>
   <desktop-icon id="desktop-icon" [icon]="Icons.imprint" [text]="'Imprint'"></desktop-icon>
   
   <img src="../assets/media/logo.png"/>
   <task-bar></task-bar>
+
+  <ng-template #windowOverlay let-title>
+    <window></window>
+  </ng-template>
 </main>
 
 <router-outlet />

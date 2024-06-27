@@ -1,5 +1,5 @@
 <div class="holder">
-    <div class="start-background" (click)="onClick($event)">
+    <div class="start-background" (pointerdown)="onClick(true)" (pointerup)="onClick(false)" (mouseleave)="onClick(false)">
         <div class="lighter-line"></div>
         <div class="darker-line"></div>
         <div class="light-line"></div>
