@@ -1,0 +1,35 @@
+@import "../../styles.scss";
+@import "../../assets/border.scss";
+
+:host
+{
+    position: fixed;
+    z-index: 15;
+}
+
+.buttonBackdrop
+{
+    --buttonWidth: 50vh;
+    --buttonHeight: 30vh;
+
+    width: var(--buttonWidth);
+    height: var(--buttonHeight);
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.buttonContent
+{
+    font: 35px / 18px "MS Serif";
+    font-size: 22px;
+    position: fixed;
+    z-index: 15;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-left: 1px;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    cursor: pointer;
+}

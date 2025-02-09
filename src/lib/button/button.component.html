@@ -1,0 +1,16 @@
+<div class="buttonBackdrop"
+    [style.--buttonWidth]="Width" 
+    [style.--buttonHeight]="Height" 
+    (pointerdown)="onClick($event, true)" 
+    (pointerup)="onClick($event, false)" 
+    (mouseleave)="onClick($event, false)" 
+>
+    <div class="lighter-line"></div>
+    <div class="darker-line"></div>
+    <div class="light-line"></div>
+    <div class="dark-line"></div>
+    <div class="main-grey"></div>
+    <div class="buttonContent">
+        <ng-content></ng-content>
+    </div>
+</div>

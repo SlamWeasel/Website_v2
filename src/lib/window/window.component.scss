@@ -4,39 +4,94 @@
 :host
 {
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     top: 30vh;
     left: 30vh;
     height: 0px;
     width: 0px;
 
 }
-#windowBackdrop
+.window-backdrop
 {
+    --windowWidth: 50vh;
+    --windowHeight: 30vh;
+
     font: 35px/50px 'MS Serif';
     font-size: 40px;
     top: 30vh;
     left: 30vh;
-    width: 50vh;
-    height: 30vh;
+    width: var(--windowWidth);
+    height: var(--windowHeight);
     z-index: 11;
     transform: translate3d(0px, 0px, 0px);
 }
-#windowHandle
+.window-handle
 {
     position: relative;
-    top: 4px;
-    left: 4px;
-    margin-bottom: 8px;
+    top: 6px;
+    left: 6px;
+    margin-bottom: 10px;
     height: 25px;
-    width: calc(100% - 8px);
-    background-color: blue;
+    width: calc(100% - 12px);
+    background-color: #000080;
+    z-index: 12;
+    cursor: pointer;
+}
+.window-content
+{
+    position: relative;
+    height: calc(100% - 25px - 12px - 16px);
+    margin: 6px;
+    padding: 6px;
     z-index: 12;
 }
-#windowContent
+
+#CloseButton
 {
-    position: relative;
-    margin: 4px;
-    background-color: green;
-    z-index: 12;
+    right: 8px;
+    top: 8px;
+}
+#MaxButton
+{
+    right: 29px;
+    top: 8px;
+}
+#MinButton
+{
+    right: 50px;
+    top: 8px;
+}
+
+.maximize-icon
+{
+    position: absolute;
+    height: 75%;
+    width: 75%;
+    left: 1px;
+    top: 2px;
+}
+
+.minimize-icon
+{
+    top: -5px;
+    position: fixed;
+    left: 4px;
+}
+
+.window-icon
+{
+    height: 83%;
+    top: 0px;
+    position: absolute;
+    align-self: anchor-center;
+    margin: 2px;
+}
+
+.window-title
+{
+    font: 35px / 18px "MS Serif";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-left: 30px;
 }

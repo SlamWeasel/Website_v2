@@ -7,6 +7,7 @@ import { StartComponent } from "./task-bar/start/start.component";
 import { NotificationBarComponent } from "./task-bar/notif-bar/notif.component";
 import { CommonModule } from "@angular/common";
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { Button95Component } from "./button/button.component";
 
 @NgModule
 ({
@@ -16,7 +17,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
         DesktopIconComponent,
         TaskBarCompnent,
         StartComponent,
-        NotificationBarComponent
+        NotificationBarComponent,
+        Button95Component
     ],
     imports: 
     [
@@ -30,7 +32,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
         DesktopIconComponent,
         TaskBarCompnent,
         StartComponent,
-        NotificationBarComponent
+        NotificationBarComponent,
+        Button95Component
     ],
 })
 export class LibMod 

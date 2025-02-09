@@ -1,12 +1,28 @@
-<div id="windowBackdrop" cdkDrag>
+<div class="window-backdrop" 
+    [style.--windowWidth]="totalWindowWidth" 
+    [style.--windowHeight]="totalWindowHeight" 
+    cdkDrag
+>
     <div class="lighter-line"></div>
     <div class="darker-line"></div>
     <div class="light-line"></div>
     <div class="dark-line"></div>
     <div class="main-grey"></div>
 
-    <div id="windowHandle" cdkDragHandle></div>
-    <div id="windowContent">
-        Test
+    <div class="window-handle" cdkDragHandle>
+        <img class="window-icon" src="{{ getIconSrc() }}"/>
+        <p class="window-title">{{ windowTitle }}</p>
+        <button-95 id="MinButton" [Height]="'21px'" [Width]="'21px'">
+            <p class="minimize-icon">_</p>
+        </button-95>
+        <button-95 id="MaxButton" [Height]="'21px'" [Width]="'21px'">
+            <img class="maximize-icon" src="../../../assets/media/maximize.png"/>
+        </button-95>
+        <button-95 id="CloseButton" [Height]="'21px'" [Width]="'21px'">
+            x
+        </button-95>
+    </div>
+    <div class="window-content">
+        <ng-content></ng-content>
     </div>
 </div>
