@@ -4,4 +4,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-This is the revamped version of my personal website. When everything will be it, it will be avalable under [erik-lehmann.website](https://erik-lehmann.website)
+This is the revamped version of my personal website
